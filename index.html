@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narcissistic Relationship Recovery Platform</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #1e2a3a; /* Dark blue-gray */
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Keeps header on top */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin-top: 10px;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+
+        /* Adding margin to the body so content doesn't hide behind the fixed header */
+        body {
+            padding-top: 120px; /* Adjusted for header height */
+        }
+
+        /* Search Bar */
+        .search-container {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 12px;
+            width: 80%;
+            max-width: 700px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: 2px solid #3498db;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-container input[type="text"]:focus {
+            border-color: #2ecc71;
+        }
+
+        /* Video Feed Section */
+        #video-feed {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            width: 100%;
+            background-color: #e9ecef;
+            min-height: 100vh;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px 0;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .video-container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Ensuring videos scale responsively */
+        .video-container video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .video-container p {
+            padding: 15px;
+            font-size: 1.1rem;
+            text-align: center;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1e2a3a;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            /* Ensure navigation items stay in one row on mobile devices */
+            nav ul {
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            .search-container input[type="text"] {
+                width: 90%;
+            }
+
+            .video-container video {
+                height: 350px;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            .video-container video {
+                height: 300px;
+            }
+
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Narcissistic Relationship Recovery</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Real Stories</a></li>
+                <li><a href="gethelp.html">Get Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Tool -->
+    <div class="search-container">
+        <input type="text" placeholder="Search for healing stories or resources...">
+    </div>
+
+    <!-- Video Feed Section -->
+    <section id="video-feed">
+        <!-- Video 1 - Replace with your Supabase video URL -->
+        <div class="video-container">
+            <video controls>
+                <source src="https://vqcvlpfsvjghkapnmxhb.supabase.co/storage/v1/object/public/videos//Gaslighting%20_%20The%20Hidden%20Signs.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Healing from Narcissistic Abuse: A Journey</p>
+        </div>
+
+        <!-- Video 2 - Replace with your Supabase video URL -->
+        <div class="video-container">
+            <video controls>
+                <source src="https://vqcvlpfsvjghkapnmxhb.supabase.co/storage/v1/object/public/videos//5%20Ways%20to%20Respond%20to%20Gaslighting.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Understanding Gaslighting and Narcissism</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Narcissistic Relationship Recovery Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
